@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1 class="logo-text">this interior</h1>
+        </div>
+        <div class="nav-bar-container">
+            <nav class="nav-bar">
+                <div class="nav-bar-element">
+                    <a href="#" class="nav-bar-link nav-bar-link--active">Home</a>
+                </div>
+                <div class="nav-bar-element">
+                    <a href="#" class="nav-bar-link">Collection</a>
+                </div>
+                <div class="nav-bar-element">
+                    <a href="#" class="nav-bar-link">About</a>
+                </div>
+                <div class="nav-bar-element">
+                    <a href="#" class="nav-bar-link">Contact</a>
+                </div>
+            </nav>
+            <div class="nav-bar-close">
+                <i class="nav-bar-close-icon fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="header-menu">
+            <i class="header-menu-icon fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="container-element">
+            <h2 class="container-h2">Modern interior</h2>
+            <p class="container-text">
+                A full-Service residential & <br>commercial interior design and <br> staging company offering <br>professional organizing & <br>eco-services.
+            </p>
+            <h3 class="container-h3">
+                Read more
+                <i class="container-h3-icon fa-solid fa-right-long"></i>
+            </h3>
+        </div>
+        <div class="container-element">
+            <img src="img/photo1.png" class="container-img">
+
+            <div class="feed-container">
+                <div class="feed-header">
+                    <div class="feed-header-img-container">
+                        <img src="img/photo2.png" class="feed-header-img">
+                    </div>
+                    <div class="feed-header-info">
+                        <h2 class="feed-header-info-name">Aliza Webber</h2>
+                        <h3 class="feed-header-info-occupation">Interior designer</h3>
+                    </div>
+                </div>
+                <div class="feed-body">
+                    <h1 class="feed-body-text">Designed in 2020 by <br>Aliza Webber</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="author">
+        <p class="author-text">created by 
+            <a href="https://github.com/SonHoang2" class="author-link">sonhoang2</a>
+        </p>
+    </footer>
+
+    <script>
+        const headerMenuIcon = document.querySelector('.header-menu-icon');
+        const navBarClose = document.querySelector('.nav-bar-close');
+        const navBarContainer = document.querySelector('.nav-bar-container');
+        
+        headerMenuIcon.addEventListener("click", () => {
+            navBarContainer.style.display = 'block';
+        })
+        navBarClose.addEventListener("click", () => {
+            navBarContainer.style.display = 'none';
+        })
+    </script>
+</body>
+</html>
